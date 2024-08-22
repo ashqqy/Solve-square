@@ -1,34 +1,34 @@
 #include <stdio.h>
 
 #include "SolvePrint.h"
-#include "constants.h"
+#include "Constants.h"
 
-int OutputSolveSquare (double x1, double x2, int numRoots)
+int SolvePrint (double x1, double x2, int num_roots)
     {
-    switch (numRoots)
+    switch (num_roots)
         {
         case ZERO_ROOT:
             printf ("\nThe quadratic equation has 0 root\n\n");
-            return 0;
+            break;
 
         case ONE_ROOT:
             printf ("\nThe quadratic equation has 1 root:\n"
                     "This root: %lf\n\n", x1);
-            return 0;
+            break;
 
         case TWO_ROOTS:
             printf ("\nThe quadratic equation has 2 roots:\n"
                     "First  root: %lf\n"
                     "Second root: %lf\n\n",
                     x1, x2);
-            return 0;
+            break;
 
         case INF_ROOTS:
             printf ("\nThe quadratic equation has infinite roots\n\n");
-            return 0;
+            break;
 
         default:
-            printf ("Error\n\n");
-            return 1;
+            printf ("SOLVE_PRINT_ERROR\n");
+            return SOLVE_PRINT_ERROR;
         }
     }

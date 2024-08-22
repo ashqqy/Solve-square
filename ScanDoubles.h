@@ -2,6 +2,6 @@
 #define SCAN_DOUBLES
 
 void CleanBufer ();
-void DoubleScan (double* coef);
+void ScanDoubles (double* coef);
 
 #endif //SCAN_DOUBLES

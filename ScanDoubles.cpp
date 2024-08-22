@@ -7,25 +7,23 @@
 
 void CleanBufer ()
     {
-    int LastSymb = 0;
-    while ((LastSymb = getchar ()) != '\n' && LastSymb != EOF)
+    int last_symb = 0;
+    while ((last_symb = getchar ()) != '\n' && last_symb != EOF)
         {
         }
     }
 
 //-----------------------------------------------------------------------------
 
-void DoubleScan (double* coef)
+void ScanDoubles (double* coef)
     {
-    int NofSuccessfulCoef = scanf ("%lf", coef);
-    assert (NofSuccessfulCoef != EOF);
-    CleanBufer ();
+    int num_good_coef = 0;
+    int last_symb = 0;
 
-    while (NofSuccessfulCoef != 1)
+    while ((num_good_coef = scanf ("%lf", coef)) != 1 || ((last_symb = getchar()) != '\n' && last_symb != EOF))
         {
         printf ("Try again: ");
-        NofSuccessfulCoef = scanf ("%lf", coef);
-        assert (NofSuccessfulCoef != EOF);
+        assert (num_good_coef != EOF);
         CleanBufer ();
         }
     }

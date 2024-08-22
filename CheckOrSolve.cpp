@@ -1,28 +1,27 @@
 #include <stdio.h>
 
+#include "Constants.h"
 #include "CheckOrSolve.h"
 #include "CompareDoubles.h"
 #include "ScanDoubles.h"
 
 //-----------------------------------------------------------------------------
 
-double CheckOrSolve ()
+void CheckOrSolve (double* user_choice)
     {
-    double choice = 0;
     printf ("What do you want?\n"
-            "Solve the equation - enter 1\n"
-            "Check the program  - enter 2\n"
-            "Your choice - ");
+            "Solve the equation: enter 1\n"
+            "Check the program: enter 2\n"
+            "Your choice: ");
 
-    DoubleScan (&choice);
+    ScanDoubles (user_choice);
     printf ("\n");
 
-    while (CompareDoubles(choice, 1) == 0 && CompareDoubles(choice, 2) == 0)
+    while (CompareDoubles(*user_choice, USER_CHOICE_SOLVE) == 0 && CompareDoubles(*user_choice, USER_CHOICE_CHECK) == 0)
         {
         printf ("Try again: ");
-        DoubleScan (&choice);
+        ScanDoubles (user_choice);
         }
-    return choice;
     }
 
 //-----------------------------------------------------------------------------

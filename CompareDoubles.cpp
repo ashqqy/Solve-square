@@ -1,11 +1,11 @@
 #include <math.h>
 
-#include "constants.h"
+#include "Constants.h"
 #include "CompareDoubles.h"
 
 bool CompareDoubles (double num1, double num2)
     {
-    if (fabs (num1 - num2) < delta)
+    if (fabs (num1 - num2) < DELTA)
         {
         return 1;
         }
