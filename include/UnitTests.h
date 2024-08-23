@@ -9,7 +9,7 @@ struct UnitData
     int num_roots_exp;
     };
 
-int UnitTest (UnitData unit_data);
+int UnitTest (UnitData* unit_data);
 void AllUnitTests ();
 
 #endif //UNIT_TESTS
