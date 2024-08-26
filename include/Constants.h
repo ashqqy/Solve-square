@@ -9,6 +9,11 @@
 const int USER_CHOICE_SOLVE = 1;
 const int USER_CHOICE_CHECK = 2;
 
+static const char* SOLVE =   "solve";
+static const char* CHECK =   "check";
+static const char* SOLVE_1 = "1";
+static const char* CHECK_2 = "2";
+
 const int ZERO_ROOT = 0;
 const int ONE_ROOT  = 1;
 const int TWO_ROOTS = 2;

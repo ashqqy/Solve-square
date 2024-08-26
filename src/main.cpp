@@ -18,19 +18,20 @@
 #include "./../include/ScanDoubles.h"
 #include "./../include/CompareDoubles.h"
 #include "./../include/UnitTests.h"
+#include "./../include/CompareSTR.h"
 
 //-----------------------------------------------------------------------------
-//strcmp # <string.h>
-int main(int argc, char *argv[])
+
+int main(int argc, const char *argv[])
     {
     printf ("\nSolve Square Equation\n"
             "(by Shafeev Artiom)\n\n");
 
     double user_choice = 0;
 
-    if (strcmp(argv[1], "1") == 0 || strcmp(argv[1], "solve") == 0)
+    if (CompareSTR(argv[1], SOLVE_1) || CompareSTR(argv[1], SOLVE))
         user_choice = 1;
-    if (strcmp(argv[1], "0") == 0 || strcmp(argv[1], "check") == 0)
+    if (CompareSTR(argv[1], CHECK_2) || CompareSTR(argv[1], CHECK))
         user_choice = 2;
     if (user_choice != 1 && user_choice != 2)
         CheckOrSolve (&user_choice);
@@ -58,4 +59,8 @@ int main(int argc, char *argv[])
         }
     }
 
+    // double input = 0;
+    // ScanDouble (&input);
+    // int user_choise = int(input);
+    // int user_choise = (int) input; //переделать scandoubles
 //-----------------------------------------------------------------------------

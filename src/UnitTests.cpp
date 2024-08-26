@@ -50,6 +50,7 @@ void AllUnitTests ()
                                        {9,  1,  2, 1,  -1, 0, ONE_ROOT},  // D = 0
                                        {10, 1,  1, 1,  0,  0, ZERO_ROOT}, // D < 0
                                        {11, -1, 5, -4, 1,  4, TWO_ROOTS}, // a < 0
+                               //test num   a    b     c      x1  x2 num_roots
                                        {12, 6.6, 13.2, -19.8, -3, 1, TWO_ROOTS}}; // not int coefficients
 
     int test_error_counter = 0;
