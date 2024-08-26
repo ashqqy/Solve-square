@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 #include "./../include/Constants.h"
 #include "./../include/CheckOrSolve.h"
@@ -9,6 +10,7 @@
 
 void CheckOrSolve (double* user_choice)
     {
+    assert (user_choice != 0);
     printf ("What do you want?\n"
             "Solve the equation: enter 1\n"
             "Check the program: enter 2\n"

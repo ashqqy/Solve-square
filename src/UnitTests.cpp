@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <assert.h>
 
 #include "./../include/Constants.h"
 #include "./../include/SquareSolve.h"
@@ -10,6 +11,7 @@
 
 int UnitTest (UnitData* unit_data)
     {
+    assert (unit_data != 0);
     double x1 = 0, x2 = 0;
     int num_roots = SquareSolve ((*unit_data).a, (*unit_data).b, (*unit_data).c, &x1, &x2);
 
