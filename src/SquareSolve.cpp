@@ -57,7 +57,7 @@ int SquareSolve (double a, double b, double c, double* x1, double* x2)
 
         if (Discriminant > DELTA)
             {
-            if (a > 0) //ordering the roots
+            if (a > 0) //упорядочивание корней по возрастанию
                 {
                 *x1 = (-b - sqrt (Discriminant))/(2*a);
                 *x2 = (-b + sqrt (Discriminant))/(2*a);
@@ -70,7 +70,6 @@ int SquareSolve (double a, double b, double c, double* x1, double* x2)
 
             return TWO_ROOTS;
             }
-
         }
     return SQUARE_SOLVE_ERROR;
     }

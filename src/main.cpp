@@ -9,6 +9,7 @@
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
+#include <string.h> //сравнение строк
 
 #include "./../include/Constants.h"
 #include "./../include/CheckOrSolve.h"
@@ -19,14 +20,20 @@
 #include "./../include/UnitTests.h"
 
 //-----------------------------------------------------------------------------
-
-int main()
+//strcmp # <string.h>
+int main(int argc, char *argv[])
     {
     printf ("\nSolve Square Equation\n"
             "(by Shafeev Artiom)\n\n");
 
     double user_choice = 0;
-    CheckOrSolve (&user_choice);
+
+    if (strcmp(argv[1], "1") == 0 || strcmp(argv[1], "solve") == 0)
+        user_choice = 1;
+    if (strcmp(argv[1], "0") == 0 || strcmp(argv[1], "check") == 0)
+        user_choice = 2;
+    if (user_choice != 1 && user_choice != 2)
+        CheckOrSolve (&user_choice);
 
     if (CompareDoubles (user_choice, USER_CHOICE_SOLVE))
         {
