@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "./../include/Constants.h" // .\..\ldkjf;d
+#include "./../include/Constants.h"
 #include "./../include/SquareSolve.h"
 #include "./../include/CompareDoubles.h"
 #include "./../include/UnitTests.h"
 
 //-----------------------------------------------------------------------------
 
-int UnitTest (UnitData* unit_data) //сделать указатели
+int UnitTest (UnitData* unit_data)
     {
     double x1 = 0, x2 = 0;
     int num_roots = SquareSolve ((*unit_data).a, (*unit_data).b, (*unit_data).c, &x1, &x2);

@@ -31,4 +31,5 @@ int SolvePrint (double x1, double x2, int num_roots)
             printf ("SOLVE_PRINT_ERROR\n");
             return SOLVE_PRINT_ERROR;
         }
+    return 0;
     }

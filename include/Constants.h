@@ -1,3 +1,8 @@
+/**
+    @file
+    @brief Файл с константами
+*/ 
+
 #ifndef CONSTANTS
 #define CONSTANTS
 
