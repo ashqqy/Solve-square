@@ -100,18 +100,23 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">const</span> <span class="keywordtype">int</span> USER_CHOICE_SOLVE = 1;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">const</span> <span class="keywordtype">int</span> USER_CHOICE_CHECK = 2;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">const</span> <span class="keywordtype">int</span> ZERO_ROOT = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">const</span> <span class="keywordtype">int</span> ONE_ROOT  = 1;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">const</span> <span class="keywordtype">int</span> TWO_ROOTS = 2;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">const</span> <span class="keywordtype">int</span> INF_ROOTS = -1;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SOLVE =   <span class="stringliteral">&quot;solve&quot;</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CHECK =   <span class="stringliteral">&quot;check&quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SOLVE_1 = <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CHECK_2 = <span class="stringliteral">&quot;2&quot;</span>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">const</span> <span class="keywordtype">double</span> DELTA = 10e-8;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">const</span> <span class="keywordtype">int</span> SQUARE_SOLVE_ERROR  = 111;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">const</span> <span class="keywordtype">int</span> SOLVE_PRINT_ERROR   = 222;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">const</span> <span class="keywordtype">int</span> INVALID_VALUE_ERROR = 333;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">//CONSTANTS</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">const</span> <span class="keywordtype">int</span> ZERO_ROOT = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">const</span> <span class="keywordtype">int</span> ONE_ROOT  = 1;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">const</span> <span class="keywordtype">int</span> TWO_ROOTS = 2;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">const</span> <span class="keywordtype">int</span> INF_ROOTS = -1;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">const</span> <span class="keywordtype">double</span> DELTA = 10e-8;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">const</span> <span class="keywordtype">int</span> SQUARE_SOLVE_ERROR  = 111;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">const</span> <span class="keywordtype">int</span> SOLVE_PRINT_ERROR   = 222;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">const</span> <span class="keywordtype">int</span> INVALID_VALUE_ERROR = 333;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">//CONSTANTS</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

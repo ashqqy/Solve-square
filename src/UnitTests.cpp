@@ -37,22 +37,23 @@ int UnitTest (UnitData* unit_data)
 
 void AllUnitTests ()
     {
-    const int total_tests = 12;
                                //test num   a   b  c   x1  x2 num_roots
-    UnitData unit_data[total_tests] = {{1,  0,  1, 1,  -1, 0, ONE_ROOT},  // a = 0
-                                       {2,  1,  0, -4, -2, 2, TWO_ROOTS}, // b = 0
-                                       {3,  1,  1, 0,  -1, 0, TWO_ROOTS}, // c = 0
-                                       {4,  0,  0, 1,  0,  0, ZERO_ROOT}, // a = b = 0
-                                       {5,  0,  1, 0,  0,  0, ONE_ROOT},  // a = c = 0
-                                       {6,  1,  0, 0,  0,  0, ONE_ROOT},  // b = c = 0
-                                       {7,  0,  0, 0,  0,  0, INF_ROOTS}, // a = b = c = 0
-                                       {8,  1,  2, -3, -3, 1, TWO_ROOTS}, // D > 0
-                                       {9,  1,  2, 1,  -1, 0, ONE_ROOT},  // D = 0
-                                       {10, 1,  1, 1,  0,  0, ZERO_ROOT}, // D < 0
-                                       {11, -1, 5, -4, 1,  4, TWO_ROOTS}, // a < 0
-                               //test num   a    b     c      x1  x2 num_roots
-                                       {12, 6.6, 13.2, -19.8, -3, 1, TWO_ROOTS}}; // not int coefficients
+    UnitData unit_data[] = {{1,  0,  1, 1,  -1, 0, ONE_ROOT},  // a = 0
+                            {2,  1,  0, -4, -2, 2, TWO_ROOTS}, // b = 0
+                            {3,  1,  1, 0,  -1, 0, TWO_ROOTS}, // c = 0
+                            {4,  0,  0, 1,  0,  0, ZERO_ROOT}, // a = b = 0
+                            {5,  0,  1, 0,  0,  0, ONE_ROOT},  // a = c = 0
+                            {6,  1,  0, 0,  0,  0, ONE_ROOT},  // b = c = 0
+                            {7,  0,  0, 0,  0,  0, INF_ROOTS}, // a = b = c = 0
+                            {8,  1,  2, -3, -3, 1, TWO_ROOTS}, // D > 0
+                            {9,  1,  2, 1,  -1, 0, ONE_ROOT},  // D = 0
+                            {10, 1,  1, 1,  0,  0, ZERO_ROOT}, // D < 0
+                            {11, -1, 5, -4, 1,  4, TWO_ROOTS}, // a < 0
+                    //test num   a    b     c      x1  x2 num_roots
+                            {12, 6.6, 13.2, -19.8, -3, 1, TWO_ROOTS}}; // not int coefficients
 
+    const int total_tests = sizeof(unit_data)/sizeof(unit_data[0]);
+    
     int test_error_counter = 0;
 
     for (int i = 0; i < total_tests; i++)
